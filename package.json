@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prebuild":"node postcommit.js",
-    "postcommit": "npm run prebuild",
+    "prepush": "npm run prebuild",
     "build": "NODE_ENV=production webpack --mode production --progress --color",
     "dev": "NODE_ENV=development webpack --mode development --progress",
     "start": "webpack-dev-server --no-inline --mode development --progress --hot --hotOnly"
